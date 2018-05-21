@@ -1,0 +1,598 @@
+/* Vendor Prefixes */
+/*
+-webkit- (Chrome, Safari, newer versions of Opera, almost all iOS browsers (including Firefox for iOS); basically, any WebKit based browser)
+
+-moz- (Firefox)
+
+-o- (Old, pre-WebKit, versions of Opera)
+
+-ms- (Internet Explorer and Microsoft Edge)
+*/
+
+/* Start: Border Radius*/
+i{display: block;}
+/*body{perspective: 300px}*/
+.border_radius1 {
+    background-color: forestgreen;
+    border-radius: 100px;
+    height: 200px;
+    text-align: center;
+    width: 200px;
+    
+}
+
+.border_radius2 {
+    background-color: lightcoral;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    border-bottom-right-radius: 45%;
+    border-bottom-left-radius: 45%;
+    height: 200px;
+    text-align: center;
+    width: 200px;
+}
+
+/* End: Border Radius*/
+
+/* Start: box-shadow */
+
+/* box-shadow: Horizontal Shadow | Vertical Shadow | Blur | Spread | Coloe | Inset, Outset; */
+
+.box-shadow1 {
+    background-color: forestgreen;
+    -moz-box-shadow:9px 9px 12px ;
+    -webkit-box-shadow:9px 9px 12px ;
+    box-shadow:9px 9px 12px;
+    height: 200px;
+    width: 200px;
+}
+
+.box-shadow2 {
+    background-color: lightcoral;
+    -moz-box-shadow:9px 9px 15px inset,
+               -9px -9px 15px inset; ;
+    -webkit-box-shadow:9px 9px 15px inset,
+               -9px -9px 15px inset; ;
+    box-shadow:9px 9px 15px inset,
+               -9px -9px 15px inset;
+    height: 200px;
+    width: 200px;
+}
+
+/* Make Button To Sahdow With JavaScript */
+
+/* End: box-shadow */
+
+
+/* Start: Text-shadow */
+
+/* text-shadow: Horizontal-Shadow, Vertical-Shadow, Blur-Radius, Color*/
+
+h2 {
+  font: bold 80px Sans-Serif;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.text-shadow1 {
+    background-color: lightblue;
+    color: white;
+    text-shadow: 0 1px 0 #ccc,
+                   0 2px 0 #c9c9c9,
+                   0 3px 0 #bbb,
+                   0 4px 0 #b9b9b9,
+                   0 5px 0 #aaa,
+                   0 6px 1px rgba(0,0,0,.1),
+                   0 0 5px rgba(0,0,0,.1),
+                   0 1px 3px rgba(0,0,0,.3),
+                   0 3px 5px rgba(0,0,0,.2),
+                   0 5px 10px rgba(0,0,0,.25),
+                   0 10px 10px rgba(0,0,0,.2),
+                   0 20px 20px rgba(0,0,0,.15);
+    }
+
+/* End: Text-Shadow */
+
+
+/* Start: Text-overflow */
+
+.overflow {
+    width: 10em;
+  outline: 1px solid #000;
+  margin: 0 0 2em 0;
+  
+  /**
+   * Required properties to achieve text-overflow
+   */
+      white-space: nowrap;
+    overflow: hidden;
+}
+
+.clip { text-overflow: clip; }
+
+.ellipsis { text-overflow: ellipsis; }
+
+.word { text-overflow: ellipsis-word; }
+
+.text { text-overflow: "---"; }
+
+.double { text-overflow: ellipsis ellipsis; text-align: center; }
+
+/* End: Text-overflow */
+
+
+/* Start: Word-wrap */
+
+.word-wrap {
+    word-wrap: break-word;
+    width: 10em;
+  outline: 1px solid #000;
+  margin: 0 0 2em 0;
+}
+
+/* End : Word-warp*/
+
+
+/* Start: 2D Transform - Rotate*/
+
+/* Syntax: transform: rotate([NUM]deg)*/
+
+.rotate {
+    background-color: lightskyblue;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 5px 5px;
+    width: 150px;
+}
+
+.rotate:hover {
+    transform: rotate(-30deg);
+}
+
+/* End: 2D Transform - Rotate*/
+
+/* Start: 2D Tranform - Scale*/
+
+/* Syntax:
+            transform: scale(width,height)
+            transform: scaleX(Width)
+            transform: scaleY(Height)
+
+Default Value : transform: none
+*/
+
+.scale {
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    background-color: firebrick;
+    color: white;
+    border: 2px dotted #CCC;
+    border-radius: 30px 30px;
+    text-align: center;
+}
+
+.scale:hover {
+    transform: scale(.7,.7);
+}
+
+/* TODO: CSS Tricks Prefix & Examples*/
+
+/* End: 2D Tansform - Scale*/
+
+/* Start 2D Transform - Translate*/
+
+/* Syntax: 
+            transform: translate(Xpx,Ypx)
+            transform: translateX(WIDTHpx)
+            transform: translateY(HEIGHTpx)
+*/
+.translate {
+    margin:auto;
+    background-color: cornflowerblue;
+    width: 200px;
+    height: 200px
+}
+
+.translate:hover {
+    transform: translate(-50px,-50px);
+}
+
+/* End: 2D Transform: Translate*/
+
+/* Start: 2D Transform: Skew*/
+
+/* Learn*/
+
+/* End: 2D Transform: Skew*/
+
+/* Start: 2D Transform: Matrix*/
+
+/* Syntax: 
+            transform: matrix( a, b, c, d, X, Y) 
+            transform: matrix( ScaleX, SkewY, SkewX, ScaleY, TranslateX , TranslateY)
+*/
+.matrix {
+    /* BAck*/
+}
+
+
+/* End: 2D Transform: Matrix*/
+
+/* Start: 3D Transform: Rotate*/
+
+.rotate3D {
+    width: 90%;
+    height: 90%;
+    background-color: burlywood;
+    border-radius:20px;
+    text-align: center;
+    transition: all 5s ease-in-out;
+    transform: rotateY(80deg)
+}
+
+/* End: 3D Transform: Rotate*/
+
+/* Start: 3D Transform: Translate*/
+.con{perspective: 600px;margin: auto;}
+.dd{width: 300px;height: 300px; transform-style: preserve-3d;position: absolute;
+    transform: rotateX(45deg) rotateY(0deg) rotateZ(45deg) scale3d(1, 1,1); transition: 1s; }
+.translate3D{
+
+    width: 300px;
+    height: 300px;
+    background-color: burlywood;
+    margin: auto;
+    border-radius:40px;
+    text-align: center;
+    transition: all 5s ease-in-out;
+    transform-style: preserve-3d;
+
+}
+.top{ transform: rotateX(90deg) translateZ(100px);position: absolute;display: flex;}
+.bottom{transform: rotateX(-90deg) translateZ(100px);position: absolute;display: flex;}
+.right{ transform: rotateY(90deg) translateZ(100px);position: absolute;display: flex;}
+/* End: 3D Transform: Translate*/
+
+
+/* Start: 3D Transform: */
+
+
+
+/* End: 3D Transform: */
+
+
+/* Start: Perspevtive*/
+
+/* The perspective CSS property determines the distance between the z=0 plane and the user */
+
+
+/*Default: perpective: none*/
+
+#prespective-parent{
+    perspective: 300px;
+}
+
+#prespective-child{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 100px;
+    display: block;
+    background-color: dodgerblue;
+    transition: all .5s ease-in-out;
+    transform: translateZ(150px)
+}
+
+
+#prespective-origin-parent{}
+
+
+#prespective-origin-child{}
+
+
+.cube1 {
+    font-size: 5em;
+    width: 2em;
+    height: 2em;
+    margin: 1em auto;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    animation: move-origin infinite 2s;
+  }
+  
+  .side {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    
+    background: rgba(255, 99, 71,.6);
+    border: 1px solid rgba(0,0,0,.5);
+    
+    color: white; 
+    text-align: center;
+    line-height: 2em;
+  }
+  
+  .front1  { transform:                  translateZ(1em); }
+  .top1    { transform: rotateX( 90deg)  translateZ(1em); }
+  .right1  { transform: rotateY( 90deg)  translateZ(1em); }
+  .left1   { transform: rotateY(-90deg)  translateZ(1em); }
+  .bottom1 { transform: rotateX(-90deg)  translateZ(1em); }
+  .back1   { transform: rotateY(-180deg) translateZ(1em); }
+  
+  @keyframes move-origin {
+    0%    { perspective-origin: 0%     0%; }
+    25%   { perspective-origin: 100%   0%; }
+    50%   { perspective-origin: 100% 100%; }
+    75%   { perspective-origin: 0%   100%; }
+    100%  { perspective-origin: 0%     0%; }
+  }
+
+  .wrapper {
+    width: 30%;
+    display: inline-block;
+    padding-bottom: 1em;
+  }
+  
+  .wrapper h1 {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .cube {
+    font-size: 2em;
+    width: 2em;
+    height: 2em;
+    margin: .5em auto;
+    transform-style: preserve-3d;
+    perspective: 250px;
+  }
+  
+  .w1 .cube { perspective-origin: top left; }
+  .w2 .cube { perspective-origin: top; }
+  .w3 .cube { perspective-origin: top right; }
+  .w4 .cube { perspective-origin: left; }
+  .w5 .cube { perspective-origin: center; }
+  .w6 .cube { perspective-origin: right; }
+  .w7 .cube { perspective-origin: bottom left; }
+  .w8 .cube { perspective-origin: bottom; }
+  .w9 .cube { perspective-origin: bottom right; }
+  
+  .side {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    
+    background: rgba(tomato, .6);
+    border: 1px solid rgba(0,0,0,.5);
+    
+    color: white; 
+    text-align: center;
+    line-height: 2em;
+  }
+  
+  .front  { transform:                  translateZ(1em); }
+  .top    { transform: rotateX( 90deg)  translateZ(1em); }
+  .right  { transform: rotateY( 90deg)  translateZ(1em); }
+  .left   { transform: rotateY(-90deg)  translateZ(1em); }
+  .bottom { transform: rotateX(-90deg)  translateZ(1em); }
+  .back   { transform: rotateY(-180deg) translateZ(1em); }
+
+/* perspective-origin: 50% 50%*/
+
+
+
+
+/*End: Perspective*/
+
+/* Start: tranform-origin & tranform-style*/
+.transform-origin {
+    background: lightblue;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    transition: transform 1s linear;
+    transform-origin: top left;
+    transform-style: preserve-3D;
+}
+
+  .box-rotate {
+    transform: rotate(360deg);
+  }
+  
+  #transform-origin-button {
+    display: block;
+    margin: auto;
+  }
+
+/* The transform-style CSS property determines if the children of an element are positioned in the 3D-space or are flattened in the plane of the element.*/
+
+/* End: tranform-origin & tranform-style*/
+
+/* Start: backface-visibility*/
+#father-backface-visibility{
+  width: 200px;
+  height: 50px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: all 0.5s ease-in-out
+}
+#father-backface-visibility:hover{
+  transform: rotateY(180deg);
+}
+
+#front-backface-visibility{
+  z-index: 10;
+  backface-visibility: hidden;
+}
+
+#back-backface-visibility{
+  z-index: 5;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+/* End: backface-visibility*/
+/* Start: Background New Features*/
+
+.background{
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    background: url(bg.jpg);
+    background-size: cover;
+    background-clip: border-box; /* content-box , padding-box */
+}
+
+/* End: Background New Features*/
+
+/* Start: Overflow New Features & Resize*/
+#Overflow{
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background: #EEE;
+  border: 1px solid #CCC;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  resize: both /* horizontal & vertical */
+
+}
+/* End: Overflow New Features & Resize*/
+
+/* Start: Flex Box: Parent : flex wrap & flex direction */
+
+.container-flex {
+  width: 100%;
+  height: 300px;
+  border: black solid 2px;
+  margin: 50px auto;          
+  display: flex;  /* flex = block &&& inline-flex = inline-block */ 
+  flex-direction: row-reverse; /* row 
+                                 column
+                                 column-reverse */
+                
+ flex-wrap: wrap; /* Default : nowrap
+                    Other value : wrap-reverse */ 
+
+justify-content: center; 
+align-items: center;
+align-content: center;
+}
+
+.container-flex div {
+  width: 33.33%;
+  background-color: rgb(245, 18, 18);
+  color: white;
+
+}
+
+.child1-flex {order: 2}
+
+.child2-flex {order: 1}
+
+.child3-flex {order: 3}
+
+/* flex: 0 1 auto;
+
+0 = flex-grow
+1 = flex-shrink
+auto = flex-basis */
+
+/* End: Flex Box: Parent : flex wrap & flex direction */
+
+
+/* Start: Flex Box: Parent : flex-row & Justify-content */
+
+  /* flex-row Is the short hand of flex-wrap & flex-direction */ 
+
+/* End: Flex Box: Parent : flex-row & Justify-content */
+
+
+
+/* Start: Transition */
+
+
+
+/* transition: <property> | Duration | <Timing function> | delay*/
+
+#transition {
+  margin:50px auto;
+  width: 200px;
+  height: 200px;
+  color: white; 
+  background-color: crimson;
+  transition: width 1.5s, background-color 2s;
+  transition-property: width, background-color;
+  transition-duration: 1.5, 2;
+  transition-timing-function: ease-in-out;
+}
+
+#transition:hover {
+  width: 400px;
+  background-color: darkturquoise
+}
+
+/* End: Transition */
+
+
+
+#wrapper {
+  perspective: 1200px;
+  width: 200px;
+  height: 200px;
+  margin: 80px auto;
+}
+#cube {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: rotateX(45deg) rotateY(0deg) rotateZ(45deg) scale3d(1, 1,1);
+  transition: transform 1s;
+}
+#cube>div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+}
+#cube>div span {
+  margin: auto;
+  font-size: 50px;
+}
+#left {
+  background-color: rgba(25, 25, 112, 0.7);
+  /*midnightblue*/
+  transform: rotateY(-90deg) translateZ(100px);
+}
+#right {
+  background-color: rgba(47, 79, 79, 0.7);
+  /*darkslategray*/
+  transform: rotateY(90deg) translateZ(100px);
+}
+#front {
+  background-color: rgba(119, 136, 153, 0.7);
+  /*lightslategray*/
+  transform: rotateY(0deg) translateZ(100px);
+}
+#back {
+  background-color: rgba(72, 61, 139, 0.7);
+  /*darkslateblue*/
+  transform: rotateX(180deg) translateZ(100px);
+}
+#top {
+  background-color: rgba(0, 128, 128, 0.7);
+  /*teal*/
+  transform: rotateX(90deg) translateZ(100px);
+}
+#bottom {
+  background-color: rgba(70, 130, 180, 0.7);
+  /*steelblue*/
+  transform: rotateX(-90deg) translateZ(100px);
+}

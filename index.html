@@ -1,0 +1,538 @@
+<!DOCTYPE html5>
+<html lang="ar">
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome CSS3</title>
+        <link rel="stylesheet" href="style.css">
+        <style>code{display: block; margin: 10 0;white-space: pre;} *{box-sizing: border-box;}</style>
+    </head>
+    <body>
+       <!-- Start: CSS Prefixes-->
+       <h1>1- CSS Prefixes</h1>
+       
+        <code>
+            -webkit- (Chrome, Safari, newer versions of Opera, almost all iOS browsers (including Firefox for iOS); basically, any WebKit based browser)                             <br />
+            
+            -moz- (Firefox)                            <br />
+
+            -o- (Old, pre-WebKit, versions of Opera)   <br />
+
+            -ms- (Internet Explorer and Microsoft Edge)<br />
+        </code>
+        <!-- End: CSS Prefixes-->
+        
+        <!-- Start: Border Radius-->
+        <h1>2- Border Radius</h1>
+        
+        <i>Ex1 :</i>
+        
+        <div class="border_radius1">Hello</div>
+        
+        <code>.border_radius {     <br />
+    background-color: forestgreen; <br />
+    border-radius: 100px;          <br />
+    height: 200px;                 <br />
+    text-align: center;            <br />
+    width: 200px; }</code>          
+   
+       <i>Ex2 :</i>
+       
+       <div class="border_radius2">Hello</div>
+       
+       <code>
+           .border_radius2 {        <br />
+    border-top-left-radius: 45%;    <br />
+    border-top-right-radius: 45%;   <br />
+    border-bottom-right-radius: 45%;<br />
+    border-bottom-left-radius: 45%; <br />
+    background-color: lightcoral;   <br />
+    height: 200px;                  <br />
+    width: 200px;                   <br />
+    text-align: center;             <br />
+}
+       </code>
+       
+       <mark>-webkit- and -moz-</mark>
+       <a href="https://www.sitepoint.com/setting-css3-border-radius-with-slash-syntax/">#1</a>
+       <a href="https://css-tricks.com/almanac/properties/b/border-radius/">#2</a>
+       
+       <!-- End: Border Radius-->
+       
+       <!-- Start: Box Shadow-->
+       <h1>2- Box Shadow</h1>
+       
+       <article>
+           1- <b>The horizontal offset</b> of the shadow, positive means the shadow will be on the right of the box, a negative offset will put the shadow on the left of the box.
+            <br />
+           2- <b>The vertical offset</b> of the shadow, a negative one means the box-shadow will be above the box, a positive one means the shadow will be below the box.
+            <br />
+           3- <b>The blur radius</b> (optional), if set to 0 the shadow will be sharp, the higher the number, the more blurred it will be.
+            <br />
+           4- <b>The spread radius</b> (optional), positive values increase the size of the shadow, negative values decrease the size. Default is 0 (the shadow is same size as blur).
+            <br />
+           5- <b>Color</b>
+        </article>
+        
+        <i>Ex 1:</i>
+        
+        <div class="box-shadow1"></div>          <br />
+        
+        <code>
+            .box-shadow1 {                       <br />
+                background-color: forestgreen;   <br />
+                -moz-box-shadow: ;               <br />
+                -webkit-box-shadow: ;            <br />
+                box-shadow:9px 9px 12px;         <br />
+                height: 200px;                   <br />
+                width: 200px;                    <br />
+            }
+        </code>                                  
+        
+        <i>Ex 2:</i>
+        
+        <div class="box-shadow2"></div>
+        
+        <mark>-webkit- and -moz-</mark>
+        
+        <a href="https://css-tricks.com/snippets/css/css-box-shadow/">#1</a>
+        
+        <!-- End: Box Shadow-->
+        
+        <!-- Start: Text Shadows-->
+    
+        <h1>3- Text Shadows :</h1>
+        
+        <i>Ex 1:</i>
+        
+         <h2 class="text-shadow1">Ahmed Ashraf</h2> 
+         
+         <code>h2 {
+                      text-align: center;
+                      font: bold 80px Sans-Serif;
+                      padding: 40px 0;
+                    }
+
+                .text-shadow1 {
+                    background-color: lightblue;
+                    color: white;
+                    text-shadow: 0 1px 0 #ccc,
+                                   0 2px 0 #c9c9c9,
+                                   0 3px 0 #bbb,
+                                   0 4px 0 #b9b9b9,
+                                   0 5px 0 #aaa,
+                                   0 6px 1px rgba(0,0,0,.1),
+                                   0 0 5px rgba(0,0,0,.1),
+                                   0 1px 3px rgba(0,0,0,.3),
+                                   0 3px 5px rgba(0,0,0,.2),
+                                   0 5px 10px rgba(0,0,0,.25),
+                                   0 10px 10px rgba(0,0,0,.2),
+                                   0 20px 20px rgba(0,0,0,.15);
+                    }</code>
+                    
+            <mark>NO</mark>
+            
+            <a href="https://css-tricks.com/almanac/properties/t/text-shadow/">#1</a>
+            
+            <!-- End: Text Shadows-->
+            
+            
+            <!-- Start: Text Overflow-->
+            <h1>4- Text Overflow</h1>
+            
+            <i>Ex 1:</i>
+            
+            
+            <p class="overflow clip">This is an example text showing nothing interesting but the truncated content via text-overflow shorthand property.</p>
+
+
+            <p class="overflow ellipsis">This is an example text showing nothing interesting but the truncated content via text-overflow shorthand property.</p>
+
+
+            <p class="overflow word">This is an example text showing nothing interesting but the truncated content via text-overflow shorthand property.</p>
+
+
+            <p class="overflow text">This is an example text showing nothing interesting but the truncated content via text-overflow shorthand property.</p>
+
+
+            <p class="overflow double">This is an example text showing nothing interesting but the truncated content via text-overflow shorthand property.</p>
+            
+            <mark>-o-</mark>
+            
+            <!--            <iframe id="cp_embed_gvFGI" src="//codepen.io/chriscoyier/embed/gvFGI?theme-id=1&amp;height=300&amp;type=result&amp;href=gvFGI&amp;user=chriscoyier&amp;safe=true&amp;slug-hash=gvFGI&amp;default-tab=result&amp;animations=run" scrolling="no" frameborder="0" height="300" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed 1" class="cp_embed_iframe " style="width: 100%; overflow: hidden; height: 100%;"></iframe>-->
+
+            <a href="https://css-tricks.com/almanac/properties/t/text-overflow/">#1</a>
+            
+            <!-- End: Text Overflow-->
+            
+            
+            <!-- Start: Word-Wrap-->
+            
+            <h1>5- Word Wrap</h1>
+            
+            <i>Ex: 1</i>
+            
+            <p class="word-wrap">This is the first time I've seen the word Pneumonoultramicroscopicsilicovolcanoconiosis. It's a long one.</p>
+            
+            <mark>Return Diffrent bet white-space & Wordwrap & prefix</mark>
+
+            <a href="https://css-tricks.com/almanac/properties/o/overflow-wrap/">#1
+            </a>            
+            
+            <!-- End: Word-Warp-->
+            
+            
+            <!-- Start 2d Transform - rotate-->
+            
+            <h1>6- 2D Transform - Rotate</h1>
+            
+            <i>Ex: 1</i>
+            
+            <div class="rotate">Hello World</div>
+            
+            <code>.rotate {
+    background-color: lightskyblue;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 5px 5px;
+    width: 150px;
+}
+
+.rotate:hover {
+    transform: rotate(-30deg);
+}</code>
+   
+        <!-- End: 2D Transform - Rotate-->
+        
+        <!--Start: 2D Transform - Scale-->
+   
+        <h1>6- 2D Transform - Scale</h1>
+         <i>Ex: 1</i>
+        
+        <div class="scale">Hello World</div>
+        
+        <code>.scale {
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    background-color: firebrick;
+    color: white;
+    border: 2px dotted #CCC;
+    border-radius: 30px 30px;
+    text-align: center;
+}
+
+.scale:hover {
+    transform: scale(.7,.7);
+}</code>
+        
+        <!-- End: 2D Transform - Scale-->
+        
+        <!-- Start: 2D Tranform - Translate-->
+        
+        <h1>7- 2D Transform - Translate</h1>
+        <i>Ex: 1</i>
+        
+        <div class="translate"></div>
+        
+        <code>.translate {
+    margin:auto;
+    background-color: cornflowerblue;
+    width: 200px;
+    height: 200px
+}
+
+.translate:hover {
+    transform: translate(-50px,-50px);
+}</code>
+   
+        <!-- End: 2D Transform - Translate-->
+        
+        <!-- Start: 2D Transform - Skew-->
+        
+        <h1>8- 2D Transform - Skew</h1>
+        
+        <!-- End: 2D Transform - Skew-->
+        
+        <!-- Start: 2D Transform - Matrix-->
+        
+        <h1>9- 2D Transform - Matrix</h1>
+        
+         <i>Ex: 1</i>
+         
+         <div class="matix"></div>
+         
+         <mark><a href="http://www.useragentman.com/blog/2011/01/07/css3-matrix-transform-for-the-mathematically-challenged/">SOURCE</a></mark>
+         <!-- End: 2D Transfom - Matrix-->
+         
+         <!-- Start: 3D Transform - Rotate X, Y, Z-->
+         
+         <h1>10- 3D Transform - Rotate X,Y,Z</h1>
+         
+         <i>Ex: 1</i>
+         
+         <img class="rotate3D" src="bg.jpg">
+         
+         <code>.rotate3D {
+    width: 90%;
+    height: 90%;
+    background-color: burlywood;
+    border-radius:20px;
+    text-align: center;
+    transition: all 5s ease-in-out;
+    transform: rotate(90deg)
+}</code>
+        
+        <!-- End: 3D Transform - Rotate X, Y, Z-->
+        
+        <!-- Start: 3D Transform - Translate 3D-->
+        
+        <h1>11- 3D Transform - Translate</h1>
+        
+        <i>Ex: 1</i>
+        <div class="con">
+           <div class="dd">
+            <div class="translate3D top"></div>
+            <div class="translate3D bottom"></div>
+            <div class="translate3D right"></div>
+            </div>
+        </div>
+        <!-- End: 3D Transform - Translate 3D-->
+        
+        
+        <!-- Satrt: 3D Transform - Scale 3D-->
+        
+        <h1>12- 3D Transform - Scale</h1>
+        
+        <!-- End: 3D Transform - Scale 3D-->
+        
+        
+         
+        
+        <div class="background">This Is Normal Div This Is Normal Div This Is Normal DivThis Is Normal Div This Is Normal Div This Is Normal DivThis Is Normal Div This Is Normal Div This Is Normal DivThis Is Normal Div This Is Normal Div This Is Normal DivThis Is Normal Div This Is Normal Div This Is Normal Div</div>
+
+        <!-- Satrt: perspective -->
+        <h1>19- 3D Perspective</h1>
+
+        <i>Ex: 1</i>
+
+        <div id="prespective-parent">
+            <div id="prespective-child"></div>
+        </div>
+
+        <code>/* The perspective CSS property determines the distance between the z=0 plane and the user */
+
+
+            /*Default: perpective: none*/
+            
+            #prespective-parent{
+                perspective: 300px;
+            }
+            
+            #prespective-child{
+                width: 100px;
+                height: 100px;
+                margin: auto;
+                display: block;
+                background-color: dodgerblue;
+                transition: all .5s ease-in-out;
+                transform: translateZ(150px)
+            }</code>
+        <!-- End : perspective -->
+
+        <!-- Satrt: perspective-origin -->
+        <h1>19- 3D perspective-origin</h1>
+        
+        <i>Ex: 1</i>
+
+        <div id="prespective-origin-parent">
+            <div id="prespective-origin-child"></div>
+        </div>
+
+        <div class="cube1">
+            <div class="side  front1">1</div>
+            <div class="side   back1">6</div>
+            <div class="side  right1">4</div>
+            <div class="side   left1">3</div>
+            <div class="side    top1">5</div>
+            <div class="side bottom1">2</div>
+          </div>
+
+
+          <div class="wrapper w1">
+            <h1><code>top left</code></h1>
+            <div class="cube">
+              <div class="side  front">1</div>
+              <div class="side   back">6</div>
+              <div class="side  right">4</div>
+              <div class="side   left">3</div>
+              <div class="side    top">5</div>
+              <div class="side bottom">2</div>
+            </div>
+          </div>
+          <div class="wrapper w2">
+            <h1><code>top</code></h1>
+            <div class="cube">
+              <div class="side  front">1</div>
+              <div class="side   back">6</div>
+              <div class="side  right">4</div>
+              <div class="side   left">3</div>
+              <div class="side    top">5</div>
+              <div class="side bottom">2</div>
+            </div>
+          </div>
+          <div class="wrapper w3">
+            <h1><code>top right</code></h1>
+            <div class="cube">
+              <div class="side  front">1</div>
+              <div class="side   back">6</div>
+              <div class="side  right">4</div>
+              <div class="side   left">3</div>
+              <div class="side    top">5</div>
+              <div class="side bottom">2</div>
+            </div>
+          </div>
+          <div class="wrapper w4">
+            <h1><code>left</code></h1>
+            <div class="cube">
+              <div class="side  front">1</div>
+              <div class="side   back">6</div>
+              <div class="side  right">4</div>
+              <div class="side   left">3</div>
+              <div class="side    top">5</div>
+              <div class="side bottom">2</div>
+            </div>
+          </div>
+          <div class="wrapper w5">
+            <h1><code>center</code></h1>
+            <div class="cube">
+              <div class="side  front">1</div>
+              <div class="side   back">6</div>
+              <div class="side  right">4</div>
+              <div class="side   left">3</div>
+              <div class="side    top">5</div>
+              <div class="side bottom">2</div>
+            </div>
+          </div>
+          <div class="wrapper w6">
+            <h1><code>right</code></h1>
+            <div class="cube">
+              <div class="side  front">1</div>
+              <div class="side   back">6</div>
+              <div class="side  right">4</div>
+              <div class="side   left">3</div>
+              <div class="side    top">5</div>
+              <div class="side bottom">2</div>
+            </div>
+          </div>
+          <div class="wrapper w7">
+            <h1><code>bottom left</code></h1>
+            <div class="cube">
+              <div class="side  front">1</div>
+              <div class="side   back">6</div>
+              <div class="side  right">4</div>
+              <div class="side   left">3</div>
+              <div class="side    top">5</div>
+              <div class="side bottom">2</div>
+            </div>
+          </div>
+          <div class="wrapper w8">
+            <h1><code>bottom</code></h1>
+            <div class="cube">
+              <div class="side  front">1</div>
+              <div class="side   back">6</div>
+              <div class="side  right">4</div>
+              <div class="side   left">3</div>
+              <div class="side    top">5</div>
+              <div class="side bottom">2</div>
+            </div>
+          </div>
+          <div class="wrapper w9">
+            <h1><code>bottom right</code></h1>
+            <div class="cube">
+              <div class="side  front">1</div>
+              <div class="side   back">6</div>
+              <div class="side  right">4</div>
+              <div class="side   left">3</div>
+              <div class="side    top">5</div>
+              <div class="side bottom">2</div>
+            </div>
+          </div>
+
+
+        <!-- End: perspective-origin -->
+
+        <!-- Start: transform Origin, Style -->
+
+        <h1>20- Transfom Origin, Style</h1>
+
+        <div class="transform-origin" id="transform-origin"></div>
+
+        <button id="transform-origin-button">click me</button>
+    
+        <!-- End: transform Origin, Style -->
+
+        <!-- Start: Backface Visibility -->
+        <h1>21- Backface Visibility</h1>
+
+        <div id="father-backface-visibility">
+            <div id="front-backface-visibility">This is front</div>
+            <div id="back-backface-visibility">This is back</div>
+        </div>
+
+
+
+
+        <script>
+            document.getElementById("transform-origin-button").onclick = function() {
+                document.getElementById("transform-origin").classList.toggle("box-rotate");
+            }
+            
+        </script>
+
+        <!-- End: Backface Visibility -->
+
+        <!-- Start: Overflow  New Features & Resize -->
+        <h1>24 - Overflow New Features &amp; Resize </h1>
+
+        <div id="Overflow">ThisisAveryverylongsentencewassaidtooliverbygulliverinlondonandjacklistnedtoit<br>
+            ThisisAveryverylongsentencewassaidtooliverbygulliverinlondonandjacklistnedtoit<br>
+            ThisisAveryverylongsentencewassaidtooliverbygulliverinlondonandjacklistnedtoit<br>
+            ThisisAveryverylongsentencewassaidtooliverbygulliverinlondonandjacklistnedtoit<br>
+            ThisisAveryverylongsentencewassaidtooliverbygulliverinlondonandjacklistnedtoit<br>
+            ThisisAveryverylongsentencewassaidtooliverbygulliverinlondonandjacklistnedtoit<br>
+            ThisisAveryverylongsentencewassaidtooliverbygulliverinlondonandjacklistnedtoit
+        </div>
+
+        <!-- End: Overflow  New Features & Resize -->
+
+        <!--  Start: Flex Box: Parent : flex wrap & flex direction-->
+
+        <div class="container-flex">
+            <div class="child1-flex">DIV 1</div>
+            <div class="child2-flex">DIV 2</div>
+            <div class="child3-flex">DIV 3</div>
+        </div>
+
+        <!-- End: Start: Flex Box: Parent : flex wrap & flex direction  -->
+
+        <!-- Start: Flex Box: Parent : flex-row & Justify content -->
+
+        <!-- End: Flex Box: Parent : flex-row & Justify-content -->
+
+
+        <!-- Start: Transition -->
+
+            <h1>32- Transition</h1>
+            <div id="transition">Just A normal Div</div>
+
+        <!-- Start: Transition -->
+    </body>
+</html>
+
+
+<!--
+    TODO: Search box-sizing CSS 
+    TODO: 2D Transform Rotate CSS-TRICKS
+    TODO: 2D Transform Scale CSS-TRICKS
+    IDEA : عمل ظرف وتخرج منه الورقة 
+-->
