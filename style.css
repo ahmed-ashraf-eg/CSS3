@@ -656,11 +656,24 @@ flex {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
+flex a {
+  text-decoration: none;
+  display:inline-block;
+  height: 50px;
+  line-height: 50px;
+  background-color: #333;
+  color: #FFF;
+  width: 100%;
+  position: relative;
+  top: -50px;
+  z-index: 1;
+}
+
 .animation-container .box {
   position: relative;
   height: 50px;
   color: #FFF;
-  line-height: 50px
+  line-height: 50px;
 }
 
 .normal {
