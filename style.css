@@ -674,20 +674,60 @@ flex a {
   height: 50px;
   color: #FFF;
   line-height: 50px;
+  z-index:2
 }
 
-.normal {
+.animation-container:hover a{
+  top: 0
+}
+
+.normal .box{
   background-color: #62C8F8
 }
 
-.transition {
+.transition .box{
   background-color: #3B5998
 }
 
-.animation {
+.transition a{
+  transition: all .5s ease-in-out; 
+}
+
+.animation .box{
   background-color: #C8302A
 }
 
+.animation:hover a{
+  animation: swinging 1.5s ease-in-out;
+  transform-origin: top
+}
+
+@keyframes swinging {
+  0% {
+    transform: rotateX(50deg)
+  }
+
+  20% {
+    transform:rotateX(-45deg) 
+  }
+
+  40% {
+    transform:rotateX(40deg) 
+  }
+
+  60% {
+    transform:rotateX(-35deg) 
+  }
+
+  80% {
+    transform:rotateX(30deg) 
+  }
+
+  100% {
+    transform:rotateX(-25deg) 
+  }
+
+}
 /* End: Animation */
 
 
